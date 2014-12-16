@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Add User's Page Custom Text
-Description: Add's custom text to Add User's Page
+Plugin Name: Add User Page Custom Text
+Description: Add's custom text to Add User Page
 Plugin URI: http://wp.nyu.edu
 Author: Neel Shah <shah.neel@nyu.edu>
 Author URI: http://neelshah.info
