@@ -34,12 +34,14 @@ if( !class_exists( 'Add_User_Page_Custom_Text_NSD' ) ) {
             add_action( 'user_new_form', array( $this , 'custom_fields_below_add_new_user' ) );
         }
         public function custom_fields_below_add_new_user() {
-            echo '<h3 style="font-weight:bold">Note:</h3>';
-            echo '<ul style="font-weight:bold; font-size:14px; list-style:disc; margin-left:16px">';
-                echo '<li>Enter netID@nyu.edu as the username.</li>';
-                echo '<li>For adding more than 1 user at a time we recommend using our Bulk Import Users plugin. Instructions for adding bulk users can be found here - <a href="http://www.nyu.edu/servicelink/KB0012244" target="_blank">http://www.nyu.edu/servicelink/KB0012244</a></li>';
-                echo '<li>If you receive a message indicating that the user already exists and you are unable to add them as an existing user, please try adding them via Bulk Import Users plugin.</li>';
-            echo '</ul>';
+            echo '<div class="add-user-page-custom-text">';
+	            echo '<h3 class="add-user-page-custom-text-title" style="font-weight:bold">Note:</h3>';
+	            echo '<ul class="add-user-page-custom-text-list" style="font-weight:bold; font-size:14px; list-style:disc; margin-left:16px">';
+	                echo '<li>Enter netID@nyu.edu as the username.</li>';
+	                echo '<li>For adding more than 1 user at a time we recommend using our Bulk Import Users plugin. Instructions for adding bulk users can be found here - <a href="http://www.nyu.edu/servicelink/KB0012244" target="_blank">http://www.nyu.edu/servicelink/KB0012244</a></li>';
+	                echo '<li>If you receive a message indicating that the user already exists and you are unable to add them as an existing user, please try adding them via Bulk Import Users plugin.</li>';
+	            echo '</ul>';
+	        echo '</div>';
         }        
 
     }
